@@ -1,5 +1,10 @@
 package com.learn.spring_framework_basics.basics_02.games;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
 public class Mario implements GamingConsole {
     public void up() {
         System.out.println("Mario Jumping up");
