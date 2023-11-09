@@ -6,9 +6,10 @@ import java.util.Arrays;
 @Component
 public class BusinessCalculationService {
 
-    DataService dataService;
+    private final DataService dataService;
 
     public BusinessCalculationService(DataService dataService) {
+        super();
         this.dataService = dataService;
     }
 
