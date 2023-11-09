@@ -10,13 +10,6 @@ public class AppPreAndPostAnnotation {
 
     public static void main (String[] args) {
         var context = new AnnotationConfigApplicationContext(AppPreAndPostAnnotation.class);
-        System.out.println(context.getBean(SomeClass.class));
-        System.out.println(context.getBean(SomeClass.class));
-        System.out.println(context.getBean(SomeClass.class));
-
-        System.out.println(context.getBean(PrototypeClass.class));
-        System.out.println(context.getBean(PrototypeClass.class));
-        System.out.println(context.getBean(PrototypeClass.class));
 
     }
 }
