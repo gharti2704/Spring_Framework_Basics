@@ -10,7 +10,7 @@ public class AppHelloWorldSpringBean {
 	public static void main(String[] args) {
 		
 		try (
-			//Create spring application context using HelloWorlConfiguration
+			//Create spring application context also called SPRING CONTAINER or SPRING IOC CONTAINER using HelloWorlConfiguration
 			var context = new AnnotationConfigApplicationContext(HelloWorldConfiguration.class)
 		) {
 			// Get the name object
