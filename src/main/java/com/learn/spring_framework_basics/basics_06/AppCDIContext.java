@@ -1,20 +1,20 @@
-package com.learn.spring_framework_basics.basics_02;
+package com.learn.spring_framework_basics.basics_06;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import com.learn.spring_framework_basics.basics_02.games.*;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("com.learn.spring_framework_basics.basics_02.games")
-public class AppGaming {
+@ComponentScan
+public class AppCDIContext {
     public static void main(String[] args) {
-        try (var context = new AnnotationConfigApplicationContext(AppGaming.class)) {
-			context.getBean(GameRunner.class).runGame();
+        try (var context = new AnnotationConfigApplicationContext(AppCDIContext.class)) {
+			System.out.println(context.getBean(BusinessService.class).getDataService());
 		} catch (BeansException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
     }
 }
