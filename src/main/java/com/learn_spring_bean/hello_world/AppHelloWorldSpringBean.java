@@ -1,9 +1,7 @@
-package com.learn_spring_bean;
+package com.learn_spring_bean.hello_world;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import com.learn_spring_bean.HelloWorldConfiguration;
 
 public class AppHelloWorldSpringBean {
 	
