@@ -12,5 +12,7 @@ public class AppDependencyInjection {
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(AppDependencyInjection.class);
         Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
+        var gameRunner = context.getBean(GameRunner.class);
+        gameRunner.run();
     }
 }
